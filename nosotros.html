@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head id="Hola">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nosotros</title>
+    <style>
+        /* Estilo del contenedor del carrusel */
+        .carousel {
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            margin: auto;
+            overflow: hidden;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+
+       
+
+        /* Imágenes dentro del carrusel */
+        .carousel-images {
+            display: flex;
+            animation: slide 10s infinite;
+        }
+
+        .carousel-images img {
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        /* Animación de deslizamiento */
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            20% { transform: translateX(0); }
+            25% { transform: translateX(-100%); }
+            45% { transform: translateX(-100%); }
+            50% { transform: translateX(-200%); }
+            70% { transform: translateX(-200%); }
+            75% { transform: translateX(-300%); }
+            95% { transform: translateX(-300%); }
+            100% { transform: translateX(-400%); }
+        }
+    </style>
+</head>
+<body id="Hola">
+
+    <div class="head">
+
+        <div class="logo">
+            <a href="#">logo</a>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="productos.html">Productos</a>
+        </nav>
+
+    </div>
+
+    <h1>Carrusel de Imágenes</h1>
+    <div class="carousel">
+        <div class="carousel-images">
+            <img src="img/logo.jpg" alt="Imagen 1">
+            <img src="img/costos.jpg" alt="Imagen 2">
+            <img src="img/header.jpg" alt="Imagen 3">
+            <img src="img/costos.jgg" alt="Imagen 4">
+            <img src="img/logo.jpg" alt="Imagen 5">
+        </div>
+    </div>
+</body>
+</html>
